@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
+</head>
+<body>
+
+<header>
+    <h1>Payment Information</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <!-- Add more navigation links as needed -->
+    </ul>
+</nav>
+
+<main>
+    <section>
+        <h2>Payment Form</h2>
+        <form action="payment.php" method="post">
+            <label for="payment_type">Payment Type:</label>
+            <select name="payment_type" id="payment_type">
+                <option value="credit_card">Credit Card</option>
+                <option value="bank_transfer">Bank Transfer</option>
+                <!-- Add more payment options as needed -->
+            </select><br><br>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date"><br><br>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time"><br><br>
+            <label for="student_name">Student Name:</label>
+            <input type="text" id="student_name" name="student_name"><br><br>
+            <label for="student_id">Student ID:</label>
+            <input type="text" id="student_id" name="student_id"><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 University Name. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
